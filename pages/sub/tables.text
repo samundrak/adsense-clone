@@ -1,0 +1,79 @@
+Table - members
+ username -> varchar
+ requestDomain - varchar
+ presentdomain - varchar
+ username - varchar
+ lastname - varchar
+ firstname - varchar
+ pending - int
+ approved - int
+ reject - int
+
+ Table - adv
+ ads_id - int
+ pageviews - int
+ username - string
+ impression - int
+ referer - string
+ ip_address -string
+ time - timestamp
+ date - date 
+ website - varchar
+clicked_of - string 
+
+
+ Table - earn_points
+ user_id - int, foreign key
+ id - int
+ ads_id - int 
+ username - string
+ earn_points - int
+ total_points -int 
+ date - date
+ time - timestamp
+
+ Table - soosal_ads
+ ads_id - int
+ banner - string
+ url - string
+ username - string
+ impression - int
+ my_impression - int
+ clicks - int
+ my_clicks - int
+ pageviews - int
+ ads_credit - int
+ date - date
+p_status = int 
+
+ Table - publishers 
+ username - string
+ website - string
+ date -date
+
+ Table - only_clicks
+ username - string 
+ clicks = int
+ ip_address - string
+ website - string
+ date - date
+ time - timestamp
+clicked_from - string 
+
+ Table - final_data 
+ credits - int
+ username - string 
+ date - date
+credits_earned - int 
+
+
+ Table - credits_
+username - string
+clicks - int
+ip_address - string,
+referer_address - string,
+date -string 
+time - timestamp
+whose_ads - string
+
+Table - approved_ads
